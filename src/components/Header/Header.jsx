@@ -1,6 +1,5 @@
 import * as S from "./style/header.js";
 import Logo from "../../assets/icons/icon.png";
-import IconPesquisa from "../../assets/icons/lupa.png";
 
 export function Header() {
   return (
@@ -28,7 +27,7 @@ export function Header() {
         </S.SecaoNavegacao>
 
         <S.FormPesquisa>
-          <S.InputPesquisa placeholder="O que você procura?" />
+          <S.InputPesquisa />
         </S.FormPesquisa>
       </S.containerHeader>
     </S.Header>

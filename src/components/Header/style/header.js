@@ -7,12 +7,12 @@ export const Header = styled.header`
 `;
 
 export const containerHeader = styled.div`
-  max-width: 92dvw;
+  max-width: 97dvw;
   margin: 0 auto;
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 export const Slogan = styled.div`
@@ -46,7 +46,10 @@ export const AncoraLink = styled.a`
 
 export const FormPesquisa = styled.form``;
 
-export const InputPesquisa = styled.input`
+export const InputPesquisa = styled.input.attrs({
+  type: "search",
+  placeholder: "O que você procura?",
+})`
   background-color: transparent;
   border: 2px solid white;
   width: 90%;
