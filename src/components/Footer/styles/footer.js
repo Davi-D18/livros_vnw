@@ -1,8 +1,6 @@
 import { styled } from "styled-components";
 
-export const Rodape = styled.footer`
-  margin-top: 18vh;
-`;
+export const Rodape = styled.footer``;
 
 export const SecaoContato = styled.section`
   display: flex;

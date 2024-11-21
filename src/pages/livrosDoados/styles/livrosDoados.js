@@ -1,8 +1,7 @@
 import { styled } from "styled-components";
 
 export const SectionLivrosDoados = styled.section`
-  margin-top: 3vh;
-  margin-bottom: 34vh;
+  height: 81dvh;
 `;
 
 export const Titulo = styled.h1`

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container_Doar = styled.section`
   max-width: 79dvw;
   margin: 0 auto;
+  margin-bottom: 18vh;
 `;
 
 export const TextPorqueDoar = styled.h2`
