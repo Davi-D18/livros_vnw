@@ -44,11 +44,12 @@ export const AncoraLink = styled.a`
   cursor: pointer;
 `;
 
-export const FormPesquisa = styled.form``;
+export const FormPesquisa = styled.section``;
 
 export const InputPesquisa = styled.input.attrs({
   type: "search",
   placeholder: "O que você procura?",
+  name: "buscaDoUsuario",
 })`
   background-color: transparent;
   border: 2px solid white;
@@ -61,7 +62,12 @@ export const InputPesquisa = styled.input.attrs({
   background-repeat: no-repeat;
   background-position: right 9px center;
   height: 40px;
+
   &::placeholder {
     color: white;
+  }
+
+  &:focus {
+    outline: 1px solid white;
   }
 `;
