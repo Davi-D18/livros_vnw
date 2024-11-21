@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import * as S from "./style/header.js";
 import Logo from "../../assets/icons/icon.png";
 
@@ -13,15 +14,15 @@ export function Header() {
         <S.SecaoNavegacao>
           <S.ListaLinks>
             <S.ItemLista>
-              <S.AncoraLink>Inicio</S.AncoraLink>
+              <Link to="/">Inicio</Link>
             </S.ItemLista>
 
             <S.ItemLista>
-              <S.AncoraLink>Livros Doados</S.AncoraLink>
+              <Link to="/livrosDoados">Livros Doados</Link>
             </S.ItemLista>
 
             <S.ItemLista>
-              <S.AncoraLink>Quero Doar</S.AncoraLink>
+              <Link to="/doacao">Quero Doar</Link>
             </S.ItemLista>
           </S.ListaLinks>
         </S.SecaoNavegacao>

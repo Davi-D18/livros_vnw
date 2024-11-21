@@ -25,13 +25,13 @@ export const ArticleCard = styled.article`
 `;
 
 export const IconCard = styled.img`
-  max-width: 35%;
-  margin-block: 9px;
+  max-width: 33%;
+  margin-block: 12px;
 `;
 
 export const Descricao = styled.p`
   color: ${(props) => props.theme.colors.black};
-  font-size: 17px;
+  font-size: 16px;
   text-align: center;
   margin-top: 20px;
   max-width: 96%;

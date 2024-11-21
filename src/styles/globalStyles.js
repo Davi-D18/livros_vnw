@@ -7,5 +7,6 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     color: white;
     font-family: ${(props) => props.theme.fonts.fontPrimary};
+    text-decoration: none;
   }
 `;
