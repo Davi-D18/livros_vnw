@@ -1,7 +1,7 @@
 import * as S from "./style/card";
 import PropTypes from "prop-types";
 
-export function Card(props) {
+export function CardMotivosDoar(props) {
   return (
     <S.ArticleCard>
       <S.IconCard src={props.iconeCard} />
@@ -11,7 +11,7 @@ export function Card(props) {
 }
 
 // Validação de props com PropTypes
-Card.propTypes = {
+CardMotivosDoar.propTypes = {
   iconeCard: PropTypes.node.isRequired,
   descricao: PropTypes.string.isRequired,
 };

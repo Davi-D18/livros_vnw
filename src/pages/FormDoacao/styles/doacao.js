@@ -2,12 +2,22 @@ import styled from "styled-components";
 
 export const SecaoFormDoarLivro = styled.section`
   height: 80dvh;
+
+  ${({ theme }) => theme.media.tablet} {
+    margin-bottom: 2.5rem;
+  }
 `;
 
 export const Aviso = styled.p`
   text-align: center;
   margin-top: 3vh;
   color: ${(props) => props.theme.colors.black};
+
+  ${({ theme }) => theme.media.tablet} {
+    font-size: 20px;
+    max-width: 87%;
+    margin-inline: auto;
+  }
 `;
 
 export const SecaoFormulario = styled.form`
@@ -21,6 +31,11 @@ export const SecaoFormulario = styled.form`
   margin: 2vh auto;
   border: 2px solid ${(props) => props.theme.colors.primary};
   border-radius: 8px;
+
+  ${({ theme }) => theme.media.tablet} {
+    width: 90%;
+    margin-top: 4vh;
+  }
 `;
 
 export const ContainerIconAndText = styled.div`
@@ -28,6 +43,10 @@ export const ContainerIconAndText = styled.div`
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 7vh;
+
+  ${({ theme }) => theme.media.tablet} {
+    gap: 10px;
+  }
 `;
 
 export const IconImagemLivro = styled.img`
@@ -55,6 +74,10 @@ export const Input = styled.input`
 
   &:focus {
     outline: 1px solid ${(props) => props.theme.colors.primary};
+  }
+
+  ${({ theme }) => theme.media.tablet} {
+    width: 78%;
   }
 `;
 

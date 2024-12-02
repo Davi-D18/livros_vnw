@@ -1,3 +1,8 @@
+export const breakpoints = {
+  tablet: "768px",
+  mobile: "480px",
+};
+
 export const theme = {
   colors: {
     primary: "#005695", // Azul forte
@@ -14,5 +19,10 @@ export const theme = {
 
   others: {
     gradient: "90deg, #001B2F, #005695",
+  },
+
+  media: {
+    tablet: `@media (max-width: ${breakpoints.tablet})`,
+    mobile: `@media (max-width: ${breakpoints.mobile})`,
   },
 };

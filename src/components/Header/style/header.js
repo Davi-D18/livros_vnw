@@ -1,9 +1,12 @@
 import styled from "styled-components";
-import LupaPng from "../../../assets/icons/lupa.png";
 
 export const Header = styled.header`
   background: linear-gradient(${(props) => props.theme.others.gradient});
   padding: 1.2rem 0rem;
+
+  ${({ theme }) => theme.media.tablet} {
+    padding-block: 0.7rem;
+  }
 `;
 
 export const containerHeader = styled.div`
@@ -13,6 +16,11 @@ export const containerHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  ${({ theme }) => theme.media.tablet} {
+    flex-direction: column;
+    gap: 28px;
+  }
 `;
 
 export const Slogan = styled.div`
@@ -40,11 +48,13 @@ export const ListaLinks = styled.ul`
 
 export const ItemLista = styled.li``;
 
-export const AncoraLink = styled.a`
-  cursor: pointer;
-`;
+export const FormPesquisa = styled.section`
+  position: relative;
 
-export const FormPesquisa = styled.section``;
+  ${({ theme }) => theme.media.tablet} {
+    display: none;
+  }
+`;
 
 export const InputPesquisa = styled.input.attrs({
   type: "search",
@@ -57,10 +67,6 @@ export const InputPesquisa = styled.input.attrs({
   border-radius: 10px;
   padding: 8px 0px;
   padding-left: 10px;
-  background-image: url(${LupaPng});
-  background-size: 16px;
-  background-repeat: no-repeat;
-  background-position: right 9px center;
   height: 40px;
 
   &::placeholder {
@@ -69,5 +75,24 @@ export const InputPesquisa = styled.input.attrs({
 
   &:focus {
     outline: 1px solid white;
+  }
+`;
+
+export const SearchIconButton = styled.button`
+  position: absolute;
+  right: 33px;
+  top: 53%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+`;
+
+export const SearchIcon = styled.img`
+  width: 18px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(0.94);
   }
 `;

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import * as S from "./style/header.js";
 import Logo from "../../assets/icons/icon.png";
+import LupaPng from "../../assets/icons/lupa.png";
 
 export function Header() {
   return (
@@ -29,6 +30,9 @@ export function Header() {
 
         <S.FormPesquisa>
           <S.InputPesquisa />
+          <S.SearchIconButton>
+            <S.SearchIcon src={LupaPng} alt="Lupa" />
+          </S.SearchIconButton>
         </S.FormPesquisa>
       </S.containerHeader>
     </S.Header>
